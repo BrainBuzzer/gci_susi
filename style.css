@@ -1,0 +1,44 @@
+body {
+  font-family: 'hack', monospace;
+  display: flex;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.section {
+  text-align: center;
+}
+
+.terminal {
+  background-color: black;
+  color: #53d602;
+}
+
+.para {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #53d602; }
+}
